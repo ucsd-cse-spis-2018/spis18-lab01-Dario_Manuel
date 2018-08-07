@@ -1,0 +1,27 @@
+# Going West 
+0 **x* -> W 0 
+
+#Turn Around 
+0 **W* -> X 1
+
+ # Going East 
+1 *x** -> E 1
+
+#Turn Around 2 
+1 *E*x -> S 0
+
+# If it hits bottom right corner switch to going north
+1 *E*S -> x 2
+
+# State 0 Clone
+2 **x* -> W 2 
+
+2 **W* -> X 3
+# State 1 Clone goes North 
+3 *x** -> E 3
+
+3 xE** -> N 2 
+
+# Repeats to state 0 
+3 NE** -> x 0
+
