@@ -1,0 +1,51 @@
+#Start by finding East wall
+0 *x** -> E 0
+0 *E** -> X 1
+
+#1 Wall is East
+1 xE** -> N 5
+1 NExx -> W 6
+1 NEWx -> S 7
+1 NExS -> W 6
+
+#2 Wall is South
+2 *x*S -> E 8
+2 xExS -> N 5
+2 NExS -> W 6
+2 xEWS -> N 5
+
+#3 Wall is North
+3 N*x* -> W 6
+3 NxWx -> S 7
+3 NxWS -> E 8
+3 NEWx -> S 7
+
+#4 Wall is West
+4 **Wx -> S 7
+4 xxWS -> E 8
+4 xEWS -> N 5
+4 NxWS -> E 8
+
+#5 Wall was SE
+5 xE*x -> N 5
+5 *x** -> E 2
+5 NExx -> W 6
+5 NEWx -> S 7
+
+#6 Wall was NE
+6 Nxx* -> W 6
+6 x*** -> N 1
+6 NxWx -> S 7
+6 NxWS -> E 8
+
+#7 Wall was NW
+7 x*Wx -> S 7
+7 **x* -> W 3
+7 xxWS -> E 8
+7 xEWS -> N 5
+
+#8 Wall was SW
+8 *x*S -> E 8
+8 ***x -> S 4
+8 xExS -> x 1
+8 NExS -> W 6
